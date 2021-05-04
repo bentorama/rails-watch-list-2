@@ -9,7 +9,9 @@
 require 'open-uri'
 require 'json'
 
-puts 'Cleaning the movie database....'
+puts 'Cleaning the bookmarks...'
+Bookmark.destroy_all
+puts 'Cleaning the movie database...'
 Movie.destroy_all
 puts 'Movie database is clean...'
 puts 'Creating movies...'
